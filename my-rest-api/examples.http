@@ -1,0 +1,15 @@
+@local=http://localhost:3900/api
+
+POST {{local}}/auth
+Content-Type: application/json
+
+{
+    "email": "nn@nn.com",
+    "password": "123123"
+}
+
+
+####
+
+GET {{local}}/cards/my-cards
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYzZWYxZWViOTdlYTBiNzUwODEyNDkiLCJiaXoiOnRydWUsImlhdCI6MTYyNjc2MzMxNn0.2eNElQd7IPp2eBtN4PHR5w9y5iiyuoEy8M0vaa8ZpDc
